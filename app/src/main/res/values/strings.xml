@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Empty Activity</string>
+    <string name="say_hello">Sveikas pasauli!</string>
+</resources>
