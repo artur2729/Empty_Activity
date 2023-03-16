@@ -35,5 +35,9 @@ class MainActivity : AppCompatActivity() {
             myTextView.setText("Second message")
             openButton.visibility = View.VISIBLE
         }
+        
+        openButton.setOnClickListener {
+            Log.i(TAG, "onCreate: just clicked OPEN button")
+        }
     }
 }
