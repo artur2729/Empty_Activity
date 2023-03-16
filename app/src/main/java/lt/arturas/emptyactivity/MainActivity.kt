@@ -3,6 +3,7 @@ package lt.arturas.emptyactivity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         ///myTextView.visiblilty
 
         myTextView.setText(R.string.say_hello)
+        openButton.visibility = View.INVISIBLE
 
         Log.i(TAG, "onCreate: ${R.string.say_hello} skaicius/id and ${getString(R.string.say_hello)} to id reiksme")
 
@@ -31,9 +33,7 @@ class MainActivity : AppCompatActivity() {
             myTextView.setText(R.string.say_hello)
             delay(timeMillis = 5000)
             myTextView.setText("Second message")
+            openButton.visibility = View.VISIBLE
         }
     }
-
-
-
 }
