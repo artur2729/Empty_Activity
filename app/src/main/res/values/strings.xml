@@ -2,4 +2,5 @@
     <string name="app_name">Empty Activity</string>
     <string name="say_hello">Sveikas pasauli!</string>
     <string name="MainAtivity_button_open">open</string>
+    <string name="MainAtivity_button_close">Close</string>
 </resources>

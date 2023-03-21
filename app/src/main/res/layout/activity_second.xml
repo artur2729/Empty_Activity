@@ -4,6 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/myTextViewSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second"
+        android:textColor="@color/teal_200"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/MainAtivity_button_close"
+        app:layout_constraintEnd_toEndOf="@+id/myTextViewSecond"
+        app:layout_constraintStart_toStartOf="@+id/myTextViewSecond"
+        app:layout_constraintTop_toBottomOf="@+id/myTextViewSecond" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
