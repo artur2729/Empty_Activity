@@ -20,6 +20,8 @@ class SecondActivity : AppCompatActivity() {
 
         myTextView.setText("Second Activity\n${message}")
 
+        //test
+
         closeButton.setOnClickListener {
             //Log.i(TAG, "onCreate: just clicked OPEN button")
             finish()
