@@ -41,7 +41,10 @@ class MainActivity : AppCompatActivity() {
         
         openButton.setOnClickListener {
             //Log.i(TAG, "onCreate: just clicked OPEN button")
+            val message : String = myEditView.text.toString()
+            Log.i(TAG, "onCreate: asdsdsd")
             val openIntent = Intent(this, SecondActivity::class.java)
+            openIntent.putExtra("message_key", message)
             startActivity(openIntent)
         }
     }
