@@ -14,6 +14,9 @@ class SecondActivity : AppCompatActivity() {
         val myTextView : TextView = findViewById(R.id.myTextViewSecond)
         val closeButton: Button = findViewById(R.id.closeButton)
 
+        myTextView.setText(R.string.SecondAtivity_text_view)
+        closeButton.setText(R.string.SecondAtivity_button_close)
+
     }
 
 
